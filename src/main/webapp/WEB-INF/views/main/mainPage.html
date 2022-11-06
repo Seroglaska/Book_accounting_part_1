@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Main Page</title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        div.MainPart {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            font-size: 2em;
+            background-color: azure;
+        }
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+
+</header>
+
+<div class="MainPart">
+    <a th:href="@{/people}">Люди</a> <br/>
+    <a th:href="@{/books}">Книги</a>
+</div>
+
+<footer>
+    <div class="FooterDanila">
+        <p class="WhoMade">@Danila Serookiy</p>
+
+    </div>
+</footer>
+
+</body>
+</html>
